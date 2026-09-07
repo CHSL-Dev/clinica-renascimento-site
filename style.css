@@ -91,3 +91,25 @@ footer {
     margin: 0 0.7rem;
   }
 }
+/* Lista de serviços */
+#servicos ul {
+  list-style: none;
+  padding: 0;
+}
+
+#servicos ul li {
+  padding: 0.6rem 0 0.6rem 1.6rem;
+  position: relative;
+  border-bottom: 1px solid #f0e4da;
+}
+
+#servicos ul li:last-child {
+  border-bottom: none;
+}
+
+#servicos ul li::before {
+  content: "✦";
+  color: #b08968;
+  position: absolute;
+  left: 0;
+}
