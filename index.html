@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instituto Re.Nascimento</title>
+  <title>Instituto ReNascimento</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Instituto Re.Nascimento</h1>
+    <h1>Instituto ReNascimento</h1>
     <nav>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre</a>
@@ -24,20 +24,18 @@
 
   <section id="servicos">
     <h2>Nossos serviços</h2>
-    <!-- placeholder: vai virar uma lista com os serviços que ela passar -->
-  <ul>
-    <li>Cuidado da pele</li>
-    <li>Rejuvenescimento facial e corporal</li>
-    <li>Tratamento de flacidez</li>
-    <li>Gordura localizada</li>
-    <li>Celulite</li>
-    <li>Revitalização</li>
-   </ul>
+    <ul>
+      <li>Cuidado da pele</li>
+      <li>Rejuvenescimento facial e corporal</li>
+      <li>Tratamento de flacidez</li>
+      <li>Gordura localizada</li>
+      <li>Celulite</li>
+      <li>Revitalização</li>
+    </ul>
   </section>
 
   <section id="sobre">
-    <h2>Sobre o Instituto Renascimento</h2>
-    <!-- placeholder: aqui entra o texto/história que ela vai escrever -->
+    <h2>Sobre o Instituto ReNascimento</h2>
     <p>Nossa clínica nasceu da união entre experiência, conhecimento científico e um olhar profundamente humano sobre a estética. Ao longo de mais de 26 anos de trajetória profissional, construímos uma forma de cuidar baseada na escuta, na verdade e no respeito à individualidade.</p>
     <p>Nosso trabalho começa muito antes do procedimento: começa na avaliação, na conversa e na compreensão dos objetivos de cada paciente. Oferecemos tratamentos estéticos faciais e corporais pensados para promover saúde, bem-estar, autoestima e resultados naturais, sempre com planejamento e responsabilidade.</p>
     <p>Nossa essência está em unir ciência e experiência para cuidar de você com verdade, responsabilidade e propósito.</p>
@@ -48,10 +46,13 @@
     <h3>Fale conosco</h3>
 
     <div class="contato-grid">
-      <form name="contato" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <p class="campo-oculto">
+      <form name="contato" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/obrigado.html">
+        <input type="hidden" name="form-name" value="contato">
+
+        <p hidden>
           <label>Não preencha este campo: <input name="bot-field"></label>
         </p>
+
         <p>
           <label>Nome<br>
           <input type="text" name="nome" required></label>
@@ -59,6 +60,18 @@
         <p>
           <label>WhatsApp<br>
           <input type="tel" name="whatsapp" required></label>
+        </p>
+        <p>
+          <label>Serviço de interesse<br>
+          <select name="servico" required>
+            <option value="">Selecione...</option>
+            <option value="Cuidado da pele">Cuidado da pele</option>
+            <option value="Rejuvenescimento facial e corporal">Rejuvenescimento facial e corporal</option>
+            <option value="Tratamento de flacidez">Tratamento de flacidez</option>
+            <option value="Gordura localizada">Gordura localizada</option>
+            <option value="Celulite">Celulite</option>
+            <option value="Revitalização">Revitalização</option>
+          </select></label>
         </p>
         <p>
           <label>Mensagem<br>
@@ -76,7 +89,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 Instituto Re.Nascimento</p>
+    <p>&copy; 2026 Instituto ReNascimento</p>
   </footer>
 
 </body>
