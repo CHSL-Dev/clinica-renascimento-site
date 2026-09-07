@@ -45,29 +45,34 @@
 
   <section id="contato">
     <h2>Contato</h2>
-    <!-- placeholder: whatsapp, endereço, horário -->
     <h3>Fale conosco</h3>
-    <form name="contato" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-    <p class="campo-oculto">
-      <label>Não preencha este campo: <input name="bot-field"></label>
-    </p>
-    <p>
-      <label>Nome<br>
-      <input type="text" name="nome" required></label>
-    </p>
-    <p>
-      <label>WhatsApp<br>
-      <input type="tel" name="whatsapp" required></label>
-  </p>
-  <p>
-    <label>Mensagem<br>
-    <textarea name="mensagem" rows="4"></textarea></label>
-  </p>
-  <button type="submit" class="cta">Enviar</button>
-  </form>     
-    <p>WhatsApp: (11) 998229249</p>
-    <p>Rua Salvador 29, Parque Paraíso - Irapecerica da Serra</p>
-    <p>Segunda a sexta, 9h às 18h</p>
+
+    <div class="contato-grid">
+      <form name="contato" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <p class="campo-oculto">
+          <label>Não preencha este campo: <input name="bot-field"></label>
+        </p>
+        <p>
+          <label>Nome<br>
+          <input type="text" name="nome" required></label>
+        </p>
+        <p>
+          <label>WhatsApp<br>
+          <input type="tel" name="whatsapp" required></label>
+        </p>
+        <p>
+          <label>Mensagem<br>
+          <textarea name="mensagem" rows="4"></textarea></label>
+        </p>
+        <button type="submit" class="cta">Enviar</button>
+      </form>
+
+      <div class="info-contato">
+        <p>WhatsApp: (11) 998229249</p>
+        <p>Rua Salvador 29, Parque Paraíso - Irapecerica da Serra</p>
+        <p>Segunda a sexta, 9h às 18h</p>
+      </div>
+    </div>
   </section>
 
   <footer>

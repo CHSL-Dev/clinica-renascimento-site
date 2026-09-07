@@ -91,6 +91,7 @@ footer {
     margin: 0 0.7rem;
   }
 }
+
 /* Lista de serviços */
 #servicos ul {
   list-style: none;
@@ -113,7 +114,60 @@ footer {
   position: absolute;
   left: 0;
 }
+
 .campo-oculto {
   position: absolute;
   left: -9999px;
+}
+
+/* Formulário de contato */
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+#contato form p {
+  margin-bottom: 1rem;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #7a5c4f;
+  font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d9c7b8;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+  outline: none;
+  border-color: #b08968;
+}
+
+.info-contato {
+  background-color: #fdf6f0;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.info-contato p {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
 }
