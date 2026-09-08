@@ -171,3 +171,33 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.accordion-item summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item summary::before {
+  content: "+ ";
+}
+
+.accordion-item[open] summary::before {
+  content: "− ";
+}
+
+.accordion-item ul {
+  margin: 0.5rem 0 0.5rem 1rem;
+  padding-left: 1rem;
+}
