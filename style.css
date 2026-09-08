@@ -1,19 +1,15 @@
 :root {
-  --cream: #fbf7f2;
+  --cream: #f1e8d6;       /* bege */
   --white: #ffffff;
-  --brown-deep: #453629;
-  --brown-mid: #7a5c4f;
-  --gold: #b08968;
-  --gold-light: #d9b896;
-  --sage: #8c9e7e;
-  --sage-dark: #5f7052;
-  --terracotta: #c98868;
-  --text: #3a2f28;
-  --text-muted: #7a6f68;
-  --border: #ece0d6;
-  --shadow: 0 4px 20px rgba(69, 54, 41, 0.08);
+  --brown-deep: #14140f;  /* preto — usado em títulos e no botão de ação */
+  --gold: #c6a15b;        /* dourado — usado em detalhes e hover */
+  --sage: #1e3b2c;        /* verde escuro — usado no traço embaixo dos títulos */
+  --sage-dark: #12261b;   /* verde mais escuro — marcadores da lista de serviços */
+  --text: #1c1a15;
+  --text-muted: #6e6759;
+  --border: #e4d9c0;
+  --shadow: 0 4px 20px rgba(20, 20, 15, 0.1);
 }
-
 * {
   box-sizing: border-box;
 }
